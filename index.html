@@ -1,10 +1,90 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Exo+2:200,200i,300,300i,600i,700" rel="stylesheet">
   <style type="text/css">
-    body { font-family: "Exo 2", sans-serif }
+    body {
+      font-family: "Exo 2", sans-serif;
+      font-weight: 300;
+      width: 960px;
+      margin: 5em auto;
+    }
+    section {
+      border-top: 1px solid #DE80BB;
+    }
+    section.header {
+      /*border-bottom: 1px solid #DE80BB;*/
+      border-top: none;
+      color: #DE80BB;
+      text-align: right;
+      padding: 2px;
+    }
+    .header ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .header ul li {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+    .header ul li::after {
+      content: " ///";
+      margin: 0 2em;
+    }
+    .header ul li:last-of-type::after {
+      content: "";
+      margin: 0;
+    }
+    
+    .title {
+      display: flex;
+    }
+    .title h1 {
+      flex: 1;
+      font-size: 5rem;
+      font-weight: 500;
+      line-height: 4rem;
+      margin: 1rem 0 2rem;
+    }
+    .title h1 .first {
+      font-weight: 200;
+    }
+    .title .abstract {
+      flex: 2;
+      color: #DE80BB;
+      font-size: 1.5rem;
+      font-style: italic;
+      text-align: right;
+    }
+    
+    h2 {
+      color: #DE80BB;
+      font-weight: 300;
+      font-size: 1rem;
+      margin: 0;
+      padding: 2px;
+      text-transform: uppercase;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Nothing to see here</h1>
+  <section class="header">
+    <ul>
+      <li>github.com/duien</li>
+      <li>hello@duien.com</li>
+      <li>Portland, OR</li>
+    </ul>
+  </section>
+
+  <section class="title">
+    <h1><span class="first">Emily</span> Hyland</h1>
+    <p class="abstract">
+      I’m a full-stack developer with a focus on user experience, looking for a company where I can work with a small team to help users solve real problems.
+    </p>
+  </section>
+
+  <section>
+    <!-- <h2>Employment Summary</h2> -->
+  </section>
 </body>
