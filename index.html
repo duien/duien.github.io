@@ -1,16 +1,16 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link href="https://fonts.googleapis.com/css?family=Exo+2:200,200i,300,300i,600i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,500&display=swap" rel="stylesheet">
   <style type="text/css">
     body {
-      font-family: "Exo 2", sans-serif;
+      font-family: "IBM Plex Mono", sans-serif;
       font-weight: 300;
       max-width: 960px;
       margin: 5rem auto;
       font-size: 18px;
     }
     p {
-      margin: 0.5rem 0;
+      margin: 1rem 0;
     }
     section {
       border-top: 1px solid #DE80BB;
@@ -42,45 +42,61 @@
       content: "";
       margin: 0;
     }
-    
+
     section.title {
       display: flex;
       align-items: center;
     }
     .title h1 {
       flex: 1;
-      font-size: 5rem;
+      /* font-size: 18px; */
+      font-size: 36px;
+      line-height: 27px;
       font-weight: 500;
-      line-height: 4rem;
+      /* line-height: 4rem; */
       margin: 1rem 0 0;
     }
     .title h1 .first {
       font-weight: 200;
+      display: block;
     }
     .title .abstract {
       flex: 2;
       color: #DE80BB;
-      font-size: 1.5rem;
+      /* font-size: 1.5rem; */
       font-style: italic;
       text-align: right;
       margin: 1rem 0 0;
     }
-    
+
     h2 {
       color: #DE80BB;
       font-weight: 300;
-      font-size: 1rem;
+      /* font-size: 1rem; */
+      font-size: 18px;
       margin: 0;
       padding: 2px 0;
       text-transform: uppercase;
     }
-    
+
     .split {
       display: flex;
     }
     .split section {
       flex: 1;
       margin-top: 0;
+    }
+
+    a:link {
+      color: #DE80BB;
+    }
+
+    dt {
+      margin-top: 1rem;
+    }
+
+    .label {
+      font-weight: 500;
     }
   </style>
 </head>
@@ -97,17 +113,38 @@
   <section class="title">
     <h1><span class="first">Emily</span> Hyland</h1>
     <p class="abstract">
-      I’m a full-stack developer with a focus on user experience, looking for a company where I can work with a small team to help users solve real problems.
+      I’m a full-stack developer with a focus on user<br/>
+      experience, looking for a company where I can work<br/>
+      with a small team to help users solve real problems.
     </p>
   </section>
 
   <section>
-    <h2>Community & Conferences</h2>
-    <p>Presented <em>Programming for Humans: API Design as UX Design</em> as part of a panel of women in engineering a Women Who Code meetup (slides, video)</p>
-    <p>Invited to present <em>Insights on Angular</em> and <em>Angular: One Year Later</em> at New Relic’s annual engineering off-site</p>
-    <p>Co-organizer of Rails Girls ATL meetups where I helped organize meetings, led discussions of homework exercizes, and taught an introduction to git (slides)</p>
+    <h2>Recently...</h2>
+
   </section>
-  
+
+  <section>
+    <h2>Community & Conferences</h2>
+    <dl>
+      <dt><em>Programming for Humans: API Design as UX Design</em></dt>
+      <dd>
+        Presented by invitation for Women Who Code as part of a panel of women in engineering<br/>
+        <span class="label">Slides:</span> <a href="https://speakerdeck.com/duien/programming-for-humans">speakerdeck.com/duien/programming-for-humans</a><br/>
+        <span class="label">Video:</span> <a href="https://bit.ly/programming-for-humans">bit.ly/programming-for-humans</a><br/>
+      </dd>
+
+      <dt><em>Insights on Angular</em> and <em>Angular: One Year Later</em></dt>
+      <dd>Presented at New Relic's annual engineering off-site, then game follow-up presentation by invitation the following year</dd>
+      <dt>Rails Girls ATL Meetup</dt>
+      <dd>
+        As co-organizer, planned meetings and led discussions of homework exercises<br/>
+        Prepared and presented <em>Git: an introduction</em> including interactive demo<br/>
+        <span class="label">Slides:</span> <a href="https://speakerdeck.com/duien/git-an-introduction">speakerdeck.com/duien/git-an-introduction</a>
+      </dd>
+    </dl>
+  </section>
+
   <div class="split">
     <section>
       <h2>Projects</h2>
